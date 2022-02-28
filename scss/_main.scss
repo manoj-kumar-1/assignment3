@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    max-width: 90%;
+    max-width: 84.5%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -8,30 +8,19 @@ section{
     .wrapper{
         display: flex;
         align-items: center;
-        margin-right: 47%;
-        @media screen and (max-width: 1450px){
-            margin-right: 46%;
-        }
-        @media screen and (max-width: 1400px){
-            margin-right: 45.8%;
-        }
-        @media screen and (max-width: 1300px){
-            margin-right: 45.5%;
-        }
-        @media screen and (max-width: 1200px){
-            margin-right: 45.1%;
-        }
+        margin-right: 49.9%;
+        padding-bottom: 31px;
         .heading {
-            position: relative;
             color: $primary;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            h1 {
-                width: 491px;
+            h1{
+                width: 320px;
             }
             i.fa.fa-caret-right {
                 font-size: 30px;
-                margin-left: 50px;
+                margin-left: 42px;
                 color: $primary;
             }  
             i.fa.fa-caret-down {
@@ -40,7 +29,7 @@ section{
         }
         .blank {
             background: $primary;
-            width: 38.7%;
+            width: 100%;
             height: 2px;
         }
     }
@@ -51,41 +40,44 @@ section{
     justify-content: space-between;
     align-items: center;
     .design {
-        position: relative;
-        top: -76px;
-        width: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .vl {
+            position: relative;
+            top: -100px;
             border-left: 2px solid $primary;
             height: 300px;
-            margin-left: 50px;
         }
-        .step {
-            display: inline-block;
-            border: 2px solid $primary;
-            border-radius: 50%;
-            padding: 0 30px;
+        .step-wapper{
             position: absolute;
-            top: 100px;
-            background: $white;
-            h1 {
-                font-size: 35px;
-                font-family: sans-serif;
-                color: $primary;
+            .step {
+                display: inline-block;
+                border: 2px solid $primary;
+                border-radius: 50%;
+                padding: 0 30px;
+                background: $white;
+                h1 {
+                    font-size: 35px;
+                    font-family: sans-serif;
+                    color: $primary;
+                }
             }
         }
     }
     .content, .image{
-        width: 35%;
+        width: 38%;
         height: 300px;
     }
     &:nth-child(odd){
         flex-direction: row-reverse;
     }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1050px) {
     section{
         .wrapper{
             margin-right: 0%;
+            padding-bottom: 0px;
             .heading {
                 flex-direction: column;
                 width: 100%;
@@ -115,11 +107,10 @@ section{
             top: -10px;
             .vl{
                 height: 200px;
-                margin-left: -1px;
+                top: 0px;
             }
             .step{
-                top: 50px;
-                margin-left: -50px;
+                margin-left: 0px;
             }
         }
         .content{
