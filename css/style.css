@@ -1,0 +1,159 @@
+h1, h2, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+p {
+  line-height: 25px;
+  color: #5a5858;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section .wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 47%;
+}
+@media screen and (max-width: 1450px) {
+  section .wrapper {
+    margin-right: 46%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  section .wrapper {
+    margin-right: 45.8%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  section .wrapper {
+    margin-right: 45.5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section .wrapper {
+    margin-right: 45.1%;
+  }
+}
+section .wrapper .heading {
+  position: relative;
+  color: #a73232;
+  display: flex;
+  align-items: center;
+}
+section .wrapper .heading h1 {
+  width: 491px;
+}
+section .wrapper .heading i.fa.fa-caret-right {
+  font-size: 30px;
+  margin-left: 50px;
+  color: #a73232;
+}
+section .wrapper .heading i.fa.fa-caret-down {
+  display: none;
+}
+section .wrapper .blank {
+  background: #a73232;
+  width: 38.7%;
+  height: 2px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .design {
+  position: relative;
+  top: -76px;
+  width: 0%;
+}
+.section .design .vl {
+  border-left: 2px solid #a73232;
+  height: 300px;
+  margin-left: 50px;
+}
+.section .design .step {
+  display: inline-block;
+  border: 2px solid #a73232;
+  border-radius: 50%;
+  padding: 0 30px;
+  position: absolute;
+  top: 100px;
+  background: #fff;
+}
+.section .design .step h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+  color: #a73232;
+}
+.section .content, .section .image {
+  width: 35%;
+  height: 300px;
+}
+.section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1140px) {
+  section .wrapper {
+    margin-right: 0%;
+  }
+  section .wrapper .heading {
+    flex-direction: column;
+    width: 100%;
+  }
+  section .wrapper .heading h1 {
+    width: 100%;
+    text-align: center;
+  }
+  section .wrapper .heading i.fa.fa-caret-right {
+    display: none;
+  }
+  section .wrapper .heading i.fa.fa-caret-down {
+    display: block;
+    font-size: 30px;
+  }
+  section .wrapper .blank {
+    display: none;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .section .design {
+    position: absolute;
+    top: -10px;
+  }
+  .section .design .vl {
+    height: 200px;
+    margin-left: -1px;
+  }
+  .section .design .step {
+    top: 50px;
+    margin-left: -50px;
+  }
+  .section .content {
+    margin-top: 200px;
+  }
+  .section .content, .section .image {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+}
